@@ -1,8 +1,23 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 a {
   color: #00B7FF;
+}
+div {
+  margin: 20px 10px;
+}
+img {
+  width: 200px;
+  display: inline;
+  margin: 5px 10px;
+}
+input {
+  font-size: 20px;
+}
+p {
+  font-size: 22px;
 }

@@ -3,3 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  for elem in memes
+      img(src=elem.url)
+      
+  form(id="commentsIn")
+    input(type='text', name="message" placeholder='Enter comments' required)
+    input(type='number' name="imageId" placeholder='Enter image number' required)
+    input(type='submit')
+  #commentsOut
+    for comment in comments
+      p "#{comment.message}" for image number #{comment.imageId}

@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var memes = require('../data/memes.json');
 
-/* GET users listing. */
+/* GET  */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send(memes);
 });
+
 
 module.exports = router;
