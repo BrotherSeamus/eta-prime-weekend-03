@@ -1,9 +1,25 @@
 body {
-  padding: 50px;
+  padding: 10px 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
+  background-color: #e67300;
 }
-
+header {
+  margin: 0;
+  background-color: #005ce6;
+  border: 3px outset #0052cc;
+  border-radius: 10px 10px 0 0;
+}
+h1 {
+  font-size: 45px;
+  color: white;
+}
+main {
+  margin: 0;
+  background-color: #e5f0ff;
+  border: 3px inset #80b3ff;
+  border-radius: 0 0 10px 10px;
+}
 a {
   color: #00B7FF;
 }
@@ -11,13 +27,26 @@ div {
   margin: 20px 10px;
 }
 img {
-  width: 200px;
+  width: 150px;
   display: inline;
   margin: 5px 10px;
+  -webkit-transition: .5s 0s;
+}
+form {
+  padding: 20px 0 0 0;
 }
 input {
   font-size: 20px;
 }
 p {
   font-size: 22px;
+  margin:0;
+  padding: 10px;
+}
+img:hover {
+  width: 350px;
+  -webkit-transition: .5s 0s;
+}
+#submit:hover {
+  background-color: #ffbf80;
 }
