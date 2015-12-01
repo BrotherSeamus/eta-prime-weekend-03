@@ -3,10 +3,11 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
   background-color: #e67300;
+  background-image: url('/images/old_moon.png');
 }
 header {
   margin: 0;
-  background-color: #005ce6;
+  background: radial-gradient(#005ce6, #3385ff, #b3b3ff, #d1b3ff, #ffffe5);
   border: 3px outset #0052cc;
   border-radius: 10px 10px 0 0;
 }
@@ -29,8 +30,18 @@ div {
 img {
   width: 150px;
   display: inline;
+  border: 2px outset #A6C5D1;
   margin: 5px 10px;
+  transition: .5s 0s;
   -webkit-transition: .5s 0s;
+}
+img:hover {
+  width: 350px;
+  border: 4px outset #A6C5D1;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  transition: .5s 0s;
+  -webkit-transition: .5s .3s;
 }
 form {
   padding: 20px 0 0 0;
@@ -42,10 +53,6 @@ p {
   font-size: 22px;
   margin:0;
   padding: 10px;
-}
-img:hover {
-  width: 350px;
-  -webkit-transition: .5s 0s;
 }
 #submit:hover {
   background-color: #ffbf80;
