@@ -6,11 +6,13 @@ block content
     h3 Welcome to #{title}
   main
     for elem in memes
-      div
-        img(src=elem.url)  
+      div.pos
+        div.image
+          img(src=elem.url)  
         form(id=elem.id)
           input(type='text' name='message' placeholder='Enter comments' required)
           input(type='submit' id='submit')
         for comment in comments
           if comment.imageId === elem.id
             p=  comment.message
+  div.clearfix

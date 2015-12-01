@@ -15,8 +15,6 @@ $(function() {
 
     newComment.imageId = $(this)[0].id;
 
-    console.log($(this)[0].id)
-
     $.ajax({
       url:'/comments',
       type: 'post',

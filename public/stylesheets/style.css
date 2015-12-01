@@ -23,6 +23,10 @@ main {
 }
 div {
   margin: 20px 10px;
+  display: inline;
+  float: left;
+  width: 250px;
+  height: 280px;
 }
 img {
   width: 150px;
@@ -52,4 +56,21 @@ p {
 }
 #submit:hover {
   background-color: #ffbf80;
+}
+.image {
+  height: 160px;
+  width: 160px;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
 }
