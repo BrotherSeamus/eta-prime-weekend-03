@@ -21,15 +21,11 @@ main {
   border: 3px inset #80b3ff;
   border-radius: 0 0 10px 10px;
 }
-a {
-  color: #00B7FF;
-}
 div {
   margin: 20px 10px;
 }
 img {
   width: 150px;
-  display: inline;
   border: 2px outset #A6C5D1;
   margin: 5px 10px;
   transition: .5s 0s;

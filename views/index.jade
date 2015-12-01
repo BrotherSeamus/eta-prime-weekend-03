@@ -6,16 +6,11 @@ block content
     h3 Welcome to #{title}
   main
     for elem in memes
-      img(src=elem.url)
-      
-    form(id="commentsIn")
-      label(for='message') Leave a Comment
-      input(id='message' type='text', name="message" 
-        placeholder='Enter comments' required)
-      label(for='imageId') For which Image?
-      input(id='imageId' type='number' name="imageId" placeholder='#' 
-        required min='1' max ='5')
-      input(type='submit' id='submit')
-    #commentsOut
-      for comment in comments
-        p "#{comment.message}" for image number #{comment.imageId}
+      div
+        img(src=elem.url)  
+        form(id=elem.id)
+          input(type='text' name='message' placeholder='Enter comments' required)
+          input(type='submit' id='submit')
+        for comment in comments
+          if comment.imageId === elem.id
+            p=  comment.message
